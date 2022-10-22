@@ -40,8 +40,5 @@ lint:
 
 .PHONY: test-all
 test-all:
-	$(MAKE) black
-	$(MAKE) flake8
-	$(MAKE) isort
-	$(MAKE) mypy
+	$(MAKE) lint
 	$(MAKE) test
